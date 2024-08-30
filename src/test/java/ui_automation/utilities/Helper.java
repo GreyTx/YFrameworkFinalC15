@@ -97,7 +97,7 @@ public class Helper {
 
 
     public static boolean isClickable(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(Driver.getInstance().getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getInstance().getDriver(), Duration.ofSeconds(5));
         try {
             wait.until(ExpectedConditions.elementToBeClickable(element));
 

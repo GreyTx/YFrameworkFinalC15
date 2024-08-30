@@ -1,6 +1,6 @@
 package ui_automation.utilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +24,7 @@ public class BrowserFactory {
             try {
                 if (driver == null) {
                     if(System.getProperty("browser")==null){
-                        WebDriverManager.chromedriver().setup();
+                        driver = new ChromeDriver();
                         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
                         chromePrefs.put("download.default_directory", System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\Downloads");
                         ChromeOptions options = new ChromeOptions();
@@ -36,8 +36,8 @@ public class BrowserFactory {
                     else {
                         switch (System.getProperty("browser")) {
                             case "chrome-headless":
-                                WebDriverManager.chromedriver().setup();
-                                driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+
+                                driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
                                 break;
                             case "chromeRemote":
                                 HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -53,12 +53,10 @@ public class BrowserFactory {
                                 }
                                 break;
                             case "firefox":
-                                WebDriverManager.firefoxdriver().setup();
                                 driver = new FirefoxDriver();
                                 break;
                             case "firefox-headless":
-                                WebDriverManager.firefoxdriver().setup();
-                                driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
+                                driver = new FirefoxDriver(new FirefoxOptions().addArguments("--headless"));
                                 break;
                             case "firefoxRemote":
                                 FirefoxOptions firOptions = new FirefoxOptions();
@@ -72,7 +70,7 @@ public class BrowserFactory {
                                 if (System.getProperty("os.name").toLowerCase().contains("mac")) {
                                     throw new WebDriverException("Your operating system does not support the requested browser");
                                 }
-                                WebDriverManager.iedriver().setup();
+
                                 driver = new InternetExplorerDriver();
                                 break;
 
@@ -80,7 +78,6 @@ public class BrowserFactory {
                                 if (System.getProperty("os.name").toLowerCase().contains("mac")) {
                                     throw new WebDriverException("Your operating system does not support the requested browser");
                                 }
-                                WebDriverManager.edgedriver().setup();
                                 driver = new EdgeDriver();
                                 break;
 
@@ -88,11 +85,9 @@ public class BrowserFactory {
                                 if (System.getProperty("os.name").toLowerCase().contains("windows")) {
                                     throw new WebDriverException("Your operating system does not support the requested browser");
                                 }
-                                WebDriverManager.getInstance(SafariDriver.class).setup();
                                 driver = new SafariDriver();
                                 break;
                             default:
-                                WebDriverManager.chromedriver().setup();
                                 driver = new ChromeDriver();
                                 break;
                         }

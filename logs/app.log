@@ -1,0 +1,586 @@
+2024-08-29 19:19:29 INFO  LoggingUtils:19 - Test started Create User
+2024-08-29 19:19:29 INFO  LoggingUtils:14 - Logged response to Cucumber report: {
+  "name" : "Mr.API",
+  "email" : "apiTest@yoll.io",
+  "gender" : "male",
+  "status" : "active"
+}
+2024-08-29 19:19:32 INFO  LoggingUtils:19 - Response received 
+{
+    "meta": null,
+    "data": {
+        "id": 7371152,
+        "name": "Mr.API",
+        "email": "apiTest@yoll.io",
+        "gender": "male",
+        "status": "active"
+    }
+}
+2024-08-29 19:19:32 INFO  LoggingUtils:24 - http code 201
+2024-08-29 19:19:32 INFO  LoggingUtils:19 - User ID: 7371152
+2024-08-29 19:19:33 INFO  LoggingUtils:19 - HTTP code after user was deleted 204
+2024-08-29 19:19:33 INFO  LoggingUtils:19 - Test ended Create User
+2024-08-29 19:19:33 INFO  LoggingUtils:19 - Test started Post Once  validate multiple times
+2024-08-29 19:19:34 INFO  LoggingUtils:14 - Logged response to Cucumber report: io.restassured.internal.RestAssuredResponseImpl@4519f676
+2024-08-29 19:19:34 INFO  LoggingUtils:19 - Test ended Post Once  validate multiple times
+2024-08-29 19:19:34 INFO  LoggingUtils:19 - Test started Get all users from endpoint
+2024-08-29 19:19:35 INFO  LoggingUtils:14 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:19:35 INFO  LoggingUtils:24 - http code 200
+2024-08-29 19:19:35 INFO  LoggingUtils:19 - Test ended Get all users from endpoint
+2024-08-29 19:19:35 INFO  LoggingUtils:19 - Test started Get unique user name from Gorest API
+2024-08-29 19:19:36 INFO  LoggingUtils:14 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:19:36 INFO  LoggingUtils:19 - Test ended Get unique user name from Gorest API
+2024-08-29 19:19:36 INFO  LoggingUtils:19 - Test started Get only Male users
+2024-08-29 19:19:37 INFO  LoggingUtils:14 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:19:37 INFO  LoggingUtils:19 - Test ended Get only Male users
+2024-08-29 19:26:19 INFO  LoggingUtils:26 - Test started Create User
+2024-08-29 19:26:20 INFO  LoggingUtils:21 - Logged response to Cucumber report: {
+  "name" : "Mr.API",
+  "email" : "apiTest@yoll.io",
+  "gender" : "male",
+  "status" : "active"
+}
+2024-08-29 19:26:23 INFO  LoggingUtils:26 - Response received 
+{
+    "meta": null,
+    "data": {
+        "id": 7371162,
+        "name": "Mr.API",
+        "email": "apiTest@yoll.io",
+        "gender": "male",
+        "status": "active"
+    }
+}
+2024-08-29 19:26:23 INFO  LoggingUtils:31 - http code 201
+2024-08-29 19:26:23 INFO  LoggingUtils:26 - User ID: 7371162
+2024-08-29 19:26:24 INFO  LoggingUtils:26 - HTTP code after user was deleted 204
+2024-08-29 19:26:24 INFO  LoggingUtils:26 - Test ended Create User
+2024-08-29 19:26:24 INFO  LoggingUtils:26 - Test started Post Once  validate multiple times
+2024-08-29 19:26:24 INFO  LoggingUtils:21 - Logged response to Cucumber report: io.restassured.internal.RestAssuredResponseImpl@2e7bf7b7
+2024-08-29 19:26:24 INFO  LoggingUtils:26 - Test ended Post Once  validate multiple times
+2024-08-29 19:26:24 INFO  LoggingUtils:26 - Test started Get all users from endpoint
+2024-08-29 19:26:26 INFO  LoggingUtils:21 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:26:26 INFO  LoggingUtils:31 - http code 200
+2024-08-29 19:26:26 INFO  LoggingUtils:26 - Test ended Get all users from endpoint
+2024-08-29 19:26:26 INFO  LoggingUtils:26 - Test started Get unique user name from Gorest API
+2024-08-29 19:26:27 INFO  LoggingUtils:21 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:26:27 INFO  LoggingUtils:26 - Test ended Get unique user name from Gorest API
+2024-08-29 19:26:27 INFO  LoggingUtils:26 - Test started Get only Male users
+2024-08-29 19:26:28 INFO  LoggingUtils:21 - Logged response to Cucumber report: {
+    "meta": {
+        "pagination": {
+            "total": 2965,
+            "pages": 297,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 7370530,
+            "name": "Ms. Ghanaanand Patel",
+            "email": "ghanaanand_patel_ms@fay.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370529,
+            "name": "Tanushri Deshpande",
+            "email": "deshpande_tanushri@huels.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370528,
+            "name": "Prasad Dhawan",
+            "email": "prasad_dhawan@beer-ondricka.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370527,
+            "name": "Bhudev Banerjee",
+            "email": "banerjee_bhudev@robel.test",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370526,
+            "name": "Bhushit Abbott",
+            "email": "abbott_bhushit@quitzon.example",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370525,
+            "name": "Daksha Rana",
+            "email": "rana_daksha@crist.test",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 7370524,
+            "name": "Upendra Asan",
+            "email": "upendra_asan@hills.test",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 7370523,
+            "name": "Brajesh Dutta",
+            "email": "dutta_brajesh@beier-brekke.example",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 7370522,
+            "name": "Vedanshi Khan",
+            "email": "khan_vedanshi@fadel-zboncak.test",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 7370521,
+            "name": "Dron Khan",
+            "email": "khan_dron@ernser-sawayn.example",
+            "gender": "male",
+            "status": "inactive"
+        }
+    ]
+}
+2024-08-29 19:26:28 INFO  LoggingUtils:26 - Test ended Get only Male users

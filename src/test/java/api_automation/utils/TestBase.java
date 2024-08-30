@@ -1,12 +1,23 @@
 package api_automation.utils;
+import io.cucumber.core.api.Scenario;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Base class for setting up the test environment by loading configuration
+ * properties.
+ *
+ * The `TestBase` class reads the `api-config.properties` file from the
+ * specified path and loads its contents into a `Properties` object.
+ */
 public class TestBase {
-	public Properties property;
+
+	public static Properties property;
+
+
 	public TestBase() {
 		try {
 			property = new Properties();
@@ -18,4 +29,7 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+
+
+
 }
